@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-3-contentful",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "nuxt-app",
+    "test-module"
+  ],
+  "scripts": {
+    "build": "npm run build -w test-module && npm run build -w nuxt-app",
+    "dev": "npm run build -w test-module && npm run dev -w nuxt-app",
+    "start": "npm run start -w nuxt-app"
+  },
+  "engines": {
+    "node": "17.5.0",
+    "npm": "8.4.1"
+  }
+}
